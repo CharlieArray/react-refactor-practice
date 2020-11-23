@@ -7,10 +7,7 @@ import CartHeader from './CartHeader';
 
 
 export default class Cart extends React.Component {
-  constructor(props){
-    super(props);
-    }
-
+ 
   render(){
 
 
