@@ -19,7 +19,8 @@ export default class FeaturesOption extends Component {
     
     
         const feature = this.props.featuredProp
-        const options = this.props.featuresObjects[feature].map(item => {
+        const {item} = this.props
+
         const itemHash = slugify(JSON.stringify(item));
             
 
@@ -43,13 +44,6 @@ export default class FeaturesOption extends Component {
                     {/*Feature - Accessory*/}
                 </div>
                 );
-        })
-
-            return (
-                <fieldset>
-                {options}
-                </fieldset>
-            );
 
     }
       
